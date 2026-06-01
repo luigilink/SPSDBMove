@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "SPSDBMove Discussions"
+    url: https://github.com/luigilink/SPSDBMove/discussions
+    about: "To engage with the community and maintainers of SPSDBMove, please visit the discussions group. There, you can share feedback, ask questions, and collaborate with others working on SPSDBMove."

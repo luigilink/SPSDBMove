@@ -1,0 +1,19 @@
+{
+  "SourceInstance":            "SQLPROD01\\SHAREPOINT",
+  "DestinationInstance":       "SQLPREP01\\SHAREPOINT",
+  "SourceBackupRoot":          "\\\\sqlprod01\\Backup\\SPSDBMove",
+  "DestinationBackupRoot":     "\\\\sqlprep01\\Backup\\SPSDBMove",
+  "DataFileDirectory":         "E:\\MSSQL\\DATA",
+  "LogFileDirectory":          "F:\\MSSQL\\LOG",
+  "ThrottleLimit":             4,
+  "OverwriteDestinationDb":    true,
+  "Databases": [
+    { "Name": "SP_Content_Intranet" },
+    { "Name": "SP_Content_Projects", "DestinationName": "SP_Content_Projects_PREP" },
+    "SP_Content_HR"
+  ],
+  "ExcludeDatabases": [
+    "SP_Content_Legacy",
+    "SP_Content_Decommissioned"
+  ]
+}
