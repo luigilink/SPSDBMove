@@ -1,8 +1,14 @@
 # This is the SPSDBMove CI Pester workflow to run tests on pull requests
+# and on pushes to main. The push-to-main run is what populates the
+# workflow status badge (branch badges only reflect push/schedule events,
+# never pull_request runs), so it deliberately has no paths filter.
 
 name: SPSDBMove CI Pester Tests
 
 on:
+  push:
+    branches:
+      - main
   pull_request:
     branches:
       - main
